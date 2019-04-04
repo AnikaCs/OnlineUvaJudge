@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char Hajj[20],i;
+   for(i=1;i!=0;i++)
+  { 
+      scanf("%s",&Hajj);
+      if(strchr(Hajj,'*'))
+        break;
+      
+      if(strcmp(Hajj,"Hajj")==0)
+          printf("Case %d: Hajj-e-Akbar\n",i);
+      if(strcmp(Hajj,"Umrah")==0)
+	      printf("Case %d: Hajj-e-Asghar\n",i);   
+   }
+	return 0;
+}

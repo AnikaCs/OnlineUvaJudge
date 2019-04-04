@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int num,l,k,n,test_case,t;
+	scanf("%d",&test_case);
+	for(t=1;t<=test_case;t++)
+	{
+	   scanf("%d",&n);
+	   num=((((((n*567)/9)+7492)*235)/47)-498);
+	   l=(int)(num/10);
+	   k=(int)(l%10);
+	   if(k<0)
+	     k=k*(-1);
+	   printf("%d\n",k);
+    }
+    return 0;	    
+}
